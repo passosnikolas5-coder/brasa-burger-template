@@ -1,0 +1,8 @@
+/* Individual product photographs preserve the complete composition at every size. */
+.menu-grid:not(.is-list) .menu-card>.product-photo{aspect-ratio:1;min-height:0}
+.menu-sprite.product-image{display:block;width:100%;height:100%;object-fit:contain;background:none}
+.menu-card>.product-photo .menu-sprite.product-image{inset:0;top:0;bottom:0;aspect-ratio:auto;transform:none!important}
+.dialog-product-photo .product-image,.cart-line-photo .product-image,.cart-upsell-photo .product-image,.checkout-item-photo .product-image{width:100%;height:100%;object-fit:contain}
+.combo-picture{position:relative;background-image:none}
+.combo-image{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:contain}
+img.finder-photo{display:block;object-fit:contain;background:#ded5cc}

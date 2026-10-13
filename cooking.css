@@ -1,0 +1,147 @@
+.cooking-story{position:relative;background:#111b1c;color:#fff;height:460svh;border-radius:10px 10px 0 0;scroll-margin-top:0}
+.cooking-sticky{position:sticky;top:0;min-height:calc(100svh - 92px);max-width:1280px;margin:0 auto;padding:25px 30px 12px;display:flex;flex-direction:column;justify-content:center}
+.cooking-heading{display:flex;align-items:center;justify-content:space-between;gap:30px;margin-bottom:24px}
+.cooking-heading>div:first-child>p{font-size:12px;color:#f5b889;margin:0 0 10px;font-weight:600}
+.cooking-heading h1{font-size:clamp(36px,3.75vw,55px);letter-spacing:-.04em;line-height:1.03;margin:0;max-width:710px}
+.cooking-intro>p{font-size:12px;line-height:1.6;color:#b6c1bd;max-width:290px}
+.cooking-menu-link{display:inline-flex;align-items:center;gap:22px;font-size:11px;font-weight:650;border-bottom:1px solid #53635d;padding:0 0 5px;margin-top:11px}
+.cooking-menu-link:hover{color:#ffac78}
+.cinema-layout{display:grid;grid-template-columns:minmax(0,1fr) 265px;align-items:stretch;min-width:0;background:#1a2726;border-radius:8px;overflow:hidden}
+.film-screen{position:relative;min-width:0;aspect-ratio:16/9;background:#080c0a;overflow:hidden;isolation:isolate}
+.film-screen video{display:block;width:100%;height:100%;object-fit:contain}
+.film-screen:after{content:'';position:absolute;inset:75% 0 0;background:linear-gradient(transparent,#050b09aa);pointer-events:none;z-index:1}
+.film-screen video::cue{background:#07130bcc;color:#fff;font:14px var(--body)}
+.film-topline{position:absolute;top:19px;left:22px;right:22px;display:flex;justify-content:space-between;gap:15px;align-items:center;font-size:10px;z-index:2;text-shadow:0 1px 10px #000}
+.film-topline>span{background:#06110b8c;border:1px solid #ffffff1f;padding:5px 9px;border-radius:3px;display:flex;align-items:center;gap:7px}
+.film-topline i{background:#ffac78;width:5px;height:5px;border-radius:50%;display:block}
+.film-caption{position:absolute;bottom:23px;left:24px;right:24px;z-index:2;font-size:14px;font-weight:650;line-height:1.4;text-shadow:0 2px 10px #000}
+.process-detail{padding:25px 22px;display:flex;flex-direction:column;min-width:0}
+.process-detail-top{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:9px;color:#a1b2ac;border-bottom:1px solid #40504a;padding-bottom:17px}
+#process-number{font-size:11px;white-space:nowrap;color:#ffac78;font-weight:650;font-variant-numeric:tabular-nums}
+.process-detail h2{font-size:31px;line-height:1.1;letter-spacing:-.025em;margin-top:23px}
+.process-detail>p:not(.process-tip){font-size:12px;color:#b7c5bf;line-height:1.7;margin-top:15px}
+.process-specs{display:flex;flex-direction:column;gap:8px;margin-top:20px}
+.process-specs>span{font-size:10px;display:flex;align-items:center;gap:8px;color:#f2ece2}
+.process-specs>span:before{content:'';width:3px;height:3px;border-radius:50%;background:#f5b889;flex-shrink:0}
+.process-tip{font-size:9px;line-height:1.6;color:#9fb1a8;margin-top:auto;padding-top:18px;display:flex;align-items:center;gap:9px}
+.process-tip svg{width:18px;height:18px;flex-shrink:0;color:#f5b889}
+.process-order{margin-top:19px;font-size:11px;min-height:40px;padding:10px 12px}
+.film-controls{display:flex;align-items:center;gap:10px;padding:17px 0 15px;min-height:65px}
+.film-control{min-height:36px;min-width:36px;padding:7px 10px;display:inline-flex;align-items:center;justify-content:center;gap:7px;background:transparent;border:1px solid #41534c;color:#fff;border-radius:4px;font-size:11px;font-weight:550}
+.film-control:hover{border-color:#d7b295;background:#23342e}
+.film-control:disabled{opacity:.35}
+.film-play{background:#f8e6c4;border-color:#f8e6c4;color:#14211b;min-width:146px;font-weight:750}
+.film-play:hover{background:#fff2da;color:#14211b}
+.film-arrow{font-size:25px;padding:0 8px;line-height:1}
+.film-restart{font-size:18px;border-color:transparent}
+.film-restart>span{font-size:10px}
+.film-speed{display:flex;align-items:center;gap:7px;font-size:9px;color:#a4b6ac}
+.film-speed select{background:#1d2c25!important;color:#fff!important;width:96px!important;padding:7px 5px!important;font-size:10px!important;min-height:35px;border-color:#41534c!important}
+.film-scrubber{flex:1;min-width:80px}
+.film-scrubber input{display:block;accent-color:#f5b889;cursor:ew-resize;width:100%;margin:0;height:15px}
+#film-time{font-size:10px;color:#a9bbb0;font-variant-numeric:tabular-nums;white-space:nowrap}
+.film-fullscreen svg{width:19px;height:19px}
+.process-chapters{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:0;border-top:1px solid #3c4f46}
+.process-chapter{display:flex;align-items:center;gap:9px;text-align:left;min-height:53px;margin-top:-1px;padding:13px 8px;border:0;border-top:3px solid transparent;background:transparent;color:#b8c8bf;font-size:11px;font-weight:600}
+.process-chapter>span:first-child,.process-chapter .chapter-number{font-size:9px;font-weight:450;color:#79978a}
+.process-chapter[aria-current=step]{color:#f8d7af;border-top-color:#ffac78}
+.process-chapter[aria-current=step]>span:first-child{color:#ffac78}
+.process-chapter:hover{background:#1f3028}
+.film-footnote{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:26px;font-size:9px;color:#91a99b}
+.film-footnote p{font-size:9px;line-height:1.4}
+.film-footnote a{white-space:nowrap;border-bottom:1px solid #50665a}
+.film-footnote a:hover{color:#f8d7af}
+.signature-strip{padding-top:30px;padding-bottom:30px}
+.cinema-layout:fullscreen{display:flex;background:#000;width:100vw;height:100svh;border-radius:0}
+.cinema-layout:fullscreen .film-screen{width:100%;height:100%;aspect-ratio:auto}
+.cinema-layout:fullscreen .process-detail{display:none}
+.film-screen:fullscreen{background:#000;width:100vw;height:100svh;aspect-ratio:auto;border-radius:0}
+.film-screen:fullscreen video{object-fit:contain}
+@media(max-width:1080px){.cooking-heading h1{font-size:39px;max-width:530px}.cinema-layout{grid-template-columns:minmax(0,1fr) 235px}.process-detail{padding:20px 17px}.process-detail h2{font-size:27px;margin-top:19px}.process-detail>p:not(.process-tip){font-size:11px;line-height:1.6}.process-specs{gap:6px;margin-top:16px}.process-specs>span{font-size:9px}.process-tip{display:none}.process-order{margin-top:auto}.film-controls{gap:7px}.film-speed>span,.film-restart>span{display:none}.film-play{min-width:125px}.process-chapter{font-size:10px;gap:6px;padding-left:6px}.cooking-sticky{justify-content:center}.cooking-heading{margin-bottom:20px}.cooking-intro>p{font-size:11px}}
+@media(max-width:760px){.cooking-story{height:430svh;border-radius:8px 8px 0 0}.cooking-sticky{padding:18px 17px 10px;min-height:calc(100svh - 76px);justify-content:center}.cooking-heading{display:block;margin-bottom:17px}.cooking-heading>div:first-child>p{font-size:10px;margin-bottom:8px}.cooking-heading h1{font-size:35px;max-width:350px;line-height:1.04}.cooking-intro{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:12px}.cooking-intro>p{font-size:9px;max-width:240px}.cooking-intro>p>br{display:none}.cooking-menu-link{margin-top:0;font-size:9px;gap:5px;white-space:nowrap}.cinema-layout{display:flex;flex-direction:column;border-radius:6px}.film-screen{aspect-ratio:16/9}.film-topline{top:10px;left:10px;right:10px;font-size:7px}.film-topline>span{padding:3px 5px;gap:5px}.film-caption{font-size:11px;bottom:14px;left:12px;right:12px}.film-screen video::cue{font-size:10px}.process-detail{padding:14px 15px 16px;position:relative}.process-detail-top{font-size:8px;padding-bottom:8px}.process-detail-top>span:first-child{font-size:8px}#process-number{font-size:9px}.process-detail h2{font-size:24px;margin-top:12px;padding-right:0}.process-detail>p:not(.process-tip){font-size:10px;line-height:1.6;margin-top:8px;max-width:540px}.process-specs{flex-direction:row;flex-wrap:wrap;gap:6px 13px;margin-top:11px}.process-specs>span{font-size:8px}.process-order{display:none}.film-controls{gap:7px;flex-wrap:wrap;padding:13px 0 9px}.film-control{min-height:33px;min-width:30px;font-size:9px;padding:6px 8px}.film-play{min-width:118px;margin-right:auto}.film-arrow{font-size:24px;width:30px;padding:0}.film-restart{display:none}.film-speed select{font-size:9px!important;min-height:33px;width:74px!important;padding:6px 3px!important}.film-fullscreen{padding:5px}.film-fullscreen svg{width:17px;height:17px}.film-scrubber{order:9;flex-basis:calc(100% - 91px);margin:5px 0}.film-scrubber input{height:12px}#film-time{order:10;font-size:8px}.process-chapters{display:flex;overflow-x:auto;gap:0;scrollbar-width:none;scroll-snap-type:x proximity}.process-chapters::-webkit-scrollbar{display:none}.process-chapter{min-width:78px;min-height:48px;flex:1;padding:10px 8px;gap:7px;scroll-snap-align:center;font-size:9px}.process-chapter>span:first-child{font-size:8px}.film-footnote{font-size:7px;gap:10px;align-items:start;padding-top:3px;min-height:24px}.film-footnote p{font-size:7px;max-width:210px}.film-footnote a{font-size:7px}}
+@media(max-height:760px) and (min-width:761px){.cooking-sticky{padding-top:14px;padding-bottom:9px}.cooking-heading{margin-bottom:17px}.cooking-heading h1{font-size:37px}.cooking-heading>div:first-child>p{font-size:10px;margin-bottom:6px}.cinema-layout{grid-template-columns:minmax(0,1fr) 230px}.film-screen{aspect-ratio:2/1}.process-detail{padding:17px}.process-detail h2{font-size:26px;margin-top:15px}.process-detail-top{padding-bottom:12px}.process-detail>p:not(.process-tip){font-size:11px;line-height:1.55;margin-top:11px}.process-specs{margin-top:13px;gap:5px}.process-specs>span{font-size:9px}.process-tip{display:none}.process-order{margin-top:auto;min-height:34px;font-size:10px}.film-controls{min-height:55px;padding:12px 0}.process-chapter{min-height:44px;padding-top:10px;padding-bottom:10px}.film-footnote{min-height:21px}}
+@media(max-height:720px) and (max-width:760px){.cooking-sticky{padding-top:12px;justify-content:start}.cooking-heading{margin-bottom:12px}.cooking-heading>div:first-child>p{display:none}.cooking-heading h1{font-size:26px;max-width:290px}.cooking-intro{margin-top:7px}.cooking-intro>p{font-size:8px}.cooking-menu-link{font-size:8px}.process-detail{padding:10px 12px}.process-detail-top{padding-bottom:6px}.process-detail h2{font-size:20px;margin-top:8px}.process-detail>p:not(.process-tip){font-size:9px;line-height:1.45;margin-top:6px}.process-specs{margin-top:7px;gap:9px}.process-specs>span{font-size:7px}.film-caption{font-size:9px;bottom:9px}.film-controls{padding-top:10px;padding-bottom:6px;gap:5px}.film-play{min-width:105px}.film-speed select{width:66px!important;font-size:8px!important}.process-chapter{min-height:43px}.film-footnote{padding-top:2px}}
+@media(max-width:360px){.cooking-heading h1{font-size:26px}.cooking-intro{gap:8px}.cooking-intro>p{max-width:180px}.cooking-sticky{padding-left:12px;padding-right:12px}.film-play{min-width:105px}.film-control{padding-left:6px;padding-right:6px}.film-controls{gap:5px}.film-speed select{width:66px!important}}
+@media(prefers-reduced-motion:reduce){.cooking-story{height:auto}.cooking-sticky{position:relative}.process-chapters{scroll-behavior:auto}}
+/* Cinema is the default; the long, pinned sequence is an explicit choice. */
+.cooking-story{height:auto;background:#101d1b}
+.cooking-sticky{position:relative;min-height:0;top:auto;padding-top:40px;padding-bottom:25px}
+.cooking-story.is-scroll-mode{height:390svh}
+.is-scroll-mode .cooking-sticky{position:sticky;top:var(--site-header-height,88px);min-height:calc(100svh - var(--site-header-height,88px))}
+.cooking-heading>div:first-child>p{font-size:14px}
+.cooking-heading>div:first-child{flex:1;min-width:0}
+.cooking-heading h1{font-size:clamp(40px,3.85vw,55px);max-width:880px}
+.cinema-layout{grid-template-columns:minmax(0,1fr) 300px}
+.film-screen{width:100%;max-width:100%}
+.cooking-intro>p{font-size:14px;line-height:1.7}
+.cooking-menu-link{font-size:14px;min-height:44px}
+.process-detail{padding:25px}
+.process-detail-top,.process-detail-top>span:first-child{font-size:12px}
+#process-number{font-size:12px}
+.process-detail h2{font-size:33px}
+.process-detail>p:not(.process-tip){font-size:14px;line-height:1.75}
+.process-specs>span{font-size:12px;line-height:1.65}
+.process-tip{font-size:12px;line-height:1.6}
+.process-order{font-size:14px;min-height:46px}
+.film-control{min-height:44px;min-width:44px;font-size:13px;padding:10px 12px}
+.film-play{min-width:150px}.film-scroll-mode{background:#23372e;border-color:#6a8a78}
+.film-scroll-mode[aria-pressed=true]{background:#ffe3b2;color:#192d39}
+.film-controls{flex-wrap:wrap;gap:9px;min-height:70px}
+.film-speed>span{font-size:12px}
+.film-speed select{font-size:13px!important;min-height:44px;width:90px!important}
+.film-scrubber{min-width:120px;flex:1}.film-scrubber input{height:44px}
+#film-time{font-size:12px}
+.process-chapter{font-size:13px;min-height:52px}
+.process-chapter>span:first-child{font-size:11px}
+.film-footnote{font-size:12px;gap:14px;align-items:start;flex-wrap:wrap}
+.film-footnote p,.film-footnote a{font-size:12px;line-height:1.6}
+.film-footnote a{min-height:32px;display:inline-flex;align-items:center}
+#film-scroll-help{flex-basis:100%;color:#c4d1c8}
+.film-topline{font-size:11px}.film-caption{font-size:16px}
+.film-control:focus-visible,.process-chapter:focus-visible,.film-speed select:focus-visible{outline:3px solid #ffd29e;outline-offset:3px}
+@media(max-width:1080px){.process-detail{padding:20px}.process-detail h2{font-size:29px}.cinema-layout{grid-template-columns:minmax(0,1fr) 270px}.cooking-heading h1{font-size:43px}.cooking-intro>p{font-size:13px}}
+@media(max-width:760px){
+  .cooking-story.is-scroll-mode{height:430svh}
+  .cooking-sticky{padding:27px 17px 22px;justify-content:start;min-height:0}
+  .cooking-heading h1{font-size:39px;max-width:360px}.cooking-heading>div:first-child>p{font-size:13px;display:block;margin-bottom:11px}
+  .cooking-intro{display:block;margin-top:16px}.cooking-intro>p{font-size:14px;max-width:100%;line-height:1.65}
+  .cooking-menu-link{font-size:14px;margin-top:7px;min-height:44px}
+  .film-screen{aspect-ratio:16/9}.film-topline{font-size:10px;top:11px;left:11px;right:11px}
+  .cinema-layout{display:contents}
+  .cooking-heading{order:0}.film-screen{order:1;border-radius:6px 6px 0 0}
+  .film-controls{order:2}.process-chapters{order:3}.process-detail{order:4;background:#1a2726;border-radius:0 0 6px 6px}.film-footnote{order:5}
+  .film-caption{font-size:14px;bottom:13px}.film-screen video::cue{font-size:12px}
+  .process-detail{padding:20px}.process-detail-top,.process-detail-top>span:first-child,#process-number{font-size:12px}
+  .process-detail h2{font-size:28px;margin-top:15px}.process-detail>p:not(.process-tip){font-size:14px;line-height:1.7;margin-top:12px}
+  .process-specs{gap:8px 15px;margin-top:14px}.process-specs>span{font-size:12px}
+  .film-controls{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px;padding:16px 0 10px}
+  .film-play{grid-column:1/4;grid-row:1;margin:0;min-width:0;min-height:44px;font-size:13px}
+  #film-prev{grid-column:4;grid-row:1}#film-next{grid-column:5;grid-row:1}.film-arrow{width:100%;font-size:25px;padding:3px}
+  .film-restart{display:none}.film-speed{grid-column:5/7;grid-row:2}.film-speed select{font-size:13px!important;width:100%!important;min-height:44px}
+  .film-fullscreen{grid-column:6;grid-row:1;padding:9px}.film-fullscreen svg{width:22px;height:22px}
+  .film-scroll-mode{grid-column:1/5;grid-row:2;min-height:44px}
+  .film-scrubber{grid-column:1/5;grid-row:3;order:initial;min-width:0;margin:0}
+  #film-time{grid-column:5/7;grid-row:3;order:initial;font-size:12px;white-space:nowrap;text-align:right}
+  .process-chapter{font-size:12px;min-width:100px;min-height:52px;padding:12px 10px;gap:7px}
+  .process-chapter>span:first-child{font-size:10px}
+  .film-footnote{font-size:11px;gap:7px;padding-top:7px}.film-footnote p,.film-footnote a{font-size:11px;max-width:none}
+  #film-status{flex:1}.film-footnote a{min-height:32px}
+  .is-scroll-mode .cooking-sticky{top:var(--site-header-height,76px);padding:12px 17px 8px;min-height:0;height:calc(100svh - var(--site-header-height,76px));justify-content:center;overflow:hidden}
+  .is-scroll-mode .cooking-heading,.is-scroll-mode .process-detail>p:not(.process-tip),.is-scroll-mode .process-specs,.is-scroll-mode .film-footnote{display:none}
+  .is-scroll-mode .process-detail{padding:12px 15px}.is-scroll-mode .process-detail h2{font-size:25px;margin-top:10px}
+  .is-scroll-mode .process-detail{order:2}.is-scroll-mode .film-controls{order:3}.is-scroll-mode .process-chapters{order:4}
+  .is-scroll-mode .process-detail-top{padding-bottom:7px}
+  .is-scroll-mode .film-play,.is-scroll-mode .film-arrow,.is-scroll-mode .film-speed,.is-scroll-mode .film-fullscreen{display:none}
+  .is-scroll-mode .film-controls{display:flex;flex-wrap:wrap;padding:10px 0;gap:6px}
+  .is-scroll-mode .film-scroll-mode{flex-basis:100%;min-height:44px}
+  .is-scroll-mode .film-scrubber{flex:1;min-width:0;order:1}.is-scroll-mode #film-time{order:2;min-width:70px;font-size:11px}
+}
+@media(max-height:760px) and (min-width:761px){
+  .is-scroll-mode .cooking-sticky{padding-top:14px;padding-bottom:8px}
+  .is-scroll-mode .cooking-heading{margin-bottom:14px}.is-scroll-mode .cooking-heading h1{font-size:36px}
+  .is-scroll-mode .film-screen{aspect-ratio:2.2}.is-scroll-mode .process-detail h2{font-size:25px}
+  .is-scroll-mode .process-detail>p:not(.process-tip){font-size:12px;line-height:1.5}
+  .is-scroll-mode .process-specs{display:none}.is-scroll-mode .film-footnote{display:none}
+}
+@media(max-width:360px){.cooking-sticky{padding-left:12px;padding-right:12px}.cooking-heading h1{font-size:34px}.film-controls{gap:4px}.film-speed select{font-size:12px!important}.is-scroll-mode .cooking-sticky{padding-left:12px;padding-right:12px}.is-scroll-mode .process-detail h2{font-size:23px}}
+@media(prefers-reduced-motion:reduce){.cooking-story.is-scroll-mode{height:auto}.is-scroll-mode .cooking-sticky{position:relative;top:auto;height:auto;overflow:visible}}

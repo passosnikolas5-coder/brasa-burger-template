@@ -1,0 +1,127 @@
+/* The same Brasa identity, with readable text and persistent shopping controls. */
+:root{--site-header-height:88px;--focus-color:#236e9d}
+.button-primary,.cart-mobile{background:#cf391b}
+.button-primary:hover,.cart-mobile:hover{background:#b62c15}
+html{scroll-padding-top:calc(var(--site-header-height) + 20px)}
+.site-header{position:sticky;top:0;z-index:50;background:#fcfaf6f7;border-bottom:1px solid #d9e1e3;backdrop-filter:blur(12px)}
+.site-header nav{font-size:14px}
+.site-header nav a{min-height:44px;display:flex;align-items:center}
+.site-header nav a:first-child,.site-header nav a:last-child{display:flex}
+.site-header nav a[aria-current]{color:#b62c15;text-decoration:underline;text-underline-offset:7px}
+.orders-open,.cart-open{font-size:14px;min-height:44px}
+.demo-ribbon{font-size:12px}
+.section-intro>p,.combo-intro>p{font-size:15px}
+.section-pretitle{font-size:14px}
+.service-strip strong{font-size:16px}.service-strip p,.service-info{font-size:13px}
+.service-options button{font-size:14px}.service-options button span{font-size:12px}
+.combo-copy>span{font-size:12px}.combo-copy>p{font-size:14px}
+.combo-copy h3{font-size:32px}.combo-copy .button{font-size:13px;min-height:44px}
+.coupon-banner p{font-size:13px;line-height:1.7}.coupon-banner small{font-size:11px}
+.coupon-banner button{font-size:13px}
+.search-field input{font-size:15px!important}
+.search-field:focus-within{outline:3px solid var(--focus-color);outline-offset:2px}
+.search-field input:focus-visible{outline:0}
+.favorites-filter,.sort-field select{font-size:14px!important}.sort-field{font-size:13px}
+.menu-tools{position:sticky;top:var(--site-header-height);z-index:25;background:#fcfaf6f7;backdrop-filter:blur(12px);padding:13px 0;margin-bottom:28px;border-bottom:1px solid #d9e1e3}
+.menu-filters button{font-size:13px;min-height:44px;padding:10px 16px}
+#menu-count{font-size:12px}
+.product-tag,.product-category{font-size:12px}
+.product-info h3{font-size:28px}.product-description{font-size:14px;line-height:1.75;min-height:74px}
+.product-price{font-size:24px}.add-product{font-size:14px;min-height:44px}
+.product-preview{position:absolute;inset:0;width:100%;height:100%;padding:0;border:0;background:transparent}
+.product-preview:focus-visible{outline:3px solid var(--focus-color);outline-offset:-5px}
+.favorite-product{width:44px;height:44px;min-height:44px}
+.menu-note{font-size:13px;line-height:1.8}
+.kitchen-copy>p:not(.section-pretitle){font-size:16px}.kitchen-copy li{font-size:14px;line-height:1.65}
+.text-link{font-size:14px;display:inline-flex;align-items:center;min-height:44px}
+.store-intro>p:not(.section-pretitle){font-size:15px}.store-detail-label{font-size:13px}
+.store-detail p,#store-hours>div{font-size:14px}.store-detail button{font-size:13px;min-height:44px}
+.demo-tag{font-size:12px}.payment-tags span{font-size:13px}
+.faq-intro>p:not(.section-pretitle){font-size:15px}.faq-intro .button{font-size:14px}
+.faq-list summary{font-size:16px;min-height:44px}.faq-list p{font-size:14px;line-height:1.85}
+.footer-links{font-size:13px}.footer-links a{display:inline-flex;min-height:44px;align-items:center}
+.site-footer>small{font-size:12px}.footer-top>p{font-size:15px}
+.footer-top .button{font-size:14px}
+dialog{overscroll-behavior:contain;scroll-padding-top:20px;scroll-padding-bottom:180px}
+body:has(dialog[open]){overflow:hidden}
+.icon-button{width:44px;height:44px;min-height:44px}
+.dialog-heading>span,.dialog-description{font-size:14px}
+#product-ingredients{font-size:14px}.ingredient-info h3{font-size:14px}
+#product-allergens{font-size:13px}
+.extras-fieldset legend,.removals-fieldset legend{font-size:14px}
+.extra-option,.product-removal{font-size:14px;min-height:46px;cursor:pointer}
+.extra-option span:last-child{font-size:13px}.extra-option input,.product-removal input{width:20px;height:20px}
+.field-label,.product-quantity-row{font-size:14px}.field-label span{font-size:12px}
+input:not([type=checkbox]):not([type=range]),select,textarea{font-size:16px;min-height:46px}
+.product-quantity-row input{min-height:46px!important}
+.product-dialog-bottom .button{font-size:14px;min-height:48px}
+.product-feedback,.cart-feedback{font-size:13px;line-height:1.75;padding:12px 15px;border-radius:5px;margin:12px 0;background:#fff0e5;color:#8d3219}
+.cart-feedback{background:#e8f1ec;color:#23563e}
+.cart-edit{font-size:13px;min-height:44px;border:0;background:transparent;padding:6px 0;color:#b62c15;text-decoration:underline;text-underline-offset:4px;display:block}
+.cart-line{display:grid;grid-template-columns:82px minmax(0,1fr);gap:12px 14px}.cart-line-photo{position:relative;width:82px;height:82px;flex-shrink:0;overflow:hidden;border-radius:5px;background:#ded5cc}
+.cart-line-unit,.cart-line-options,.cart-removed,.cart-line-note{font-size:13px;line-height:1.7}
+.cart-line-controls{grid-column:2;display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:space-between}
+.cart-line-controls .quantity-control{margin-top:0}
+.quantity-button{width:40px;min-height:44px}.quantity-value{font-size:14px}
+.cart-remove{min-height:44px;font-size:13px}
+.cart-upsell>span{font-size:13px}.cart-upsell button{min-height:44px;font-size:13px}
+.cart-subtotal{font-size:14px}.cart-subtotal.muted-total,.muted-total strong{font-size:13px}
+.cart-bottom>p,#coupon-feedback{font-size:13px}.cart-bottom>.button{font-size:15px;min-height:48px}
+.clear-button{font-size:13px;min-height:44px}
+.checkout-lead,.remember-field,.field-help,#checkout-status{font-size:13px}
+.remember-field input{width:20px;height:20px}
+.checkout-fieldset legend{font-size:16px}
+.checkout-summary{position:sticky;top:0}.checkout-total-line{font-size:14px}
+.checkout-items{margin-bottom:18px}
+.checkout-item{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid #cbd9df;align-items:start}
+.checkout-item-photo{position:relative;width:64px;height:64px;flex-shrink:0;border-radius:5px;overflow:hidden;background:#ded5cc}
+.checkout-item-info{flex:1;min-width:0;font-size:14px;line-height:1.6}
+.checkout-item-info strong{font-size:14px;display:block}.checkout-item-options{font-size:12px;color:#52636b;line-height:1.7;margin:6px 0;overflow-wrap:anywhere}
+.checkout-item-price{font-size:14px;font-weight:650;display:block;margin-top:5px}
+#checkout-submit{font-size:15px;min-height:48px}.checkout-edit{font-size:14px;min-height:44px}
+.order-result textarea{font-size:13px}.order-result .button{font-size:14px;min-height:46px}
+.order-card .order-actions button,.order-actions .button{font-size:13px;min-height:44px}
+.order-meta,.order-receipt-line,.checkout-success>p,.checkout-success>strong{font-size:14px}
+.order-receipt-line small{font-size:12px}
+.info-dialog p,.info-dialog li{font-size:14px}.info-dialog .button{font-size:14px}
+.toast{font-size:14px}
+@media(max-width:1080px){.product-info{padding:20px}.product-info h3{font-size:26px}.combo-copy>p{font-size:13px}.combo-copy .button{font-size:12px}.menu-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){
+  :root{--site-header-height:76px}
+  .demo-ribbon{font-size:11px;padding:7px 16px}
+  .site-header nav.is-open{padding:12px;gap:5px}.site-header nav a{font-size:15px}
+  .orders-open,.mobile-nav-toggle{min-width:44px}.cart-open{min-height:44px;padding:9px 12px}
+  .service-strip p{font-size:13px;line-height:1.6}.service-strip strong{font-size:15px}
+  .service-options button{font-size:14px;min-height:50px}.service-options button span{font-size:12px}
+  .combo-feature{grid-template-columns:1fr;min-height:0}.combo-picture{aspect-ratio:1;max-height:none}
+  .combo-copy{padding:23px}.combo-copy h3{font-size:31px}.combo-copy>p{font-size:14px}
+  .combo-copy>div{width:100%;flex-direction:row;align-items:center;justify-content:space-between}
+  .combo-copy .button{font-size:13px;min-height:46px}.combo-copy>span{font-size:12px}
+  .coupon-banner p{font-size:13px}.coupon-banner strong{font-size:16px}.coupon-banner button{font-size:14px}
+  .section-intro>p,.combo-intro>p{font-size:14px}.section-pretitle{font-size:13px}
+  .favorites-filter,.sort-field select{font-size:14px!important;min-height:44px!important}
+  .search-field input{font-size:16px!important}.menu-tools{padding:10px 0;gap:0;margin-bottom:22px}
+  .menu-filters button{font-size:13px;min-height:44px}.menu-filters{padding-bottom:0}
+  #menu-count{display:none}.menu-grid{grid-template-columns:1fr;gap:22px}
+  .product-info{padding:22px}.product-tag,.product-category{font-size:12px}
+  .product-description{font-size:14px;min-height:0}.product-info h3{font-size:28px}
+  .add-product{font-size:14px}.product-price{font-size:25px}
+  .favorite-product{width:44px;height:44px;min-height:44px;right:12px;top:12px;font-size:25px}
+  .menu-note{font-size:12px}.kitchen-copy>p:not(.section-pretitle){font-size:15px}.kitchen-copy li{font-size:14px}
+  .store-intro>p:not(.section-pretitle){font-size:14px}.store-detail p,#store-hours>div{font-size:14px}
+  .faq-intro>p:not(.section-pretitle){font-size:14px}.faq-list summary{font-size:15px}.faq-list p{font-size:14px}
+  .footer-links{font-size:13px}.site-footer>small{font-size:11px}
+  dialog{padding:20px;scroll-padding-bottom:160px}.product-dialog-content .dialog-description{font-size:14px}
+  .product-dialog-bottom{gap:12px}.product-dialog-bottom .button{font-size:13px;min-width:0}
+  .cart-line{grid-template-columns:70px minmax(0,1fr)}.cart-line-photo{width:70px;height:70px}
+  .cart-line-info{flex:1;min-width:0}.cart-line-info h3{font-size:20px}
+  .cart-line-controls{grid-column:1/-1;width:100%;padding-left:0;gap:8px}
+  .quantity-button{width:36px}.cart-remove{font-size:12px;padding-left:0}
+  .checkout-summary{position:static}.checkout-fieldset legend{font-size:15px}
+  .remember-field{font-size:13px}.checkout-success h3{font-size:25px}
+  .info-dialog p,.info-dialog li{font-size:14px}
+  .cart-mobile{padding-bottom:calc(14px + env(safe-area-inset-bottom));bottom:8px}
+  .toast{bottom:calc(84px + env(safe-area-inset-bottom));font-size:13px}
+}
+@media(max-width:360px){.site-header{padding:0 10px}.brand{gap:6px}.brand>span{font-size:29px}.brand>svg{width:20px}.header-actions{gap:2px}.cart-open{padding:8px;gap:6px}.combo-copy{padding:20px}.combo-copy h3{font-size:28px}.combo-copy .button{font-size:12px;padding:11px}.product-info{padding:20px}.product-bottom{gap:12px}.add-product{min-width:110px}.cart-line-controls{padding-left:0}.cart-line-total{font-size:15px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

@@ -1,0 +1,13 @@
+.product-bundle{border:1px solid #cbd6db;border-radius:8px;padding:17px;margin:24px 0;background:#f3eee7;min-width:0}
+.product-bundle legend{padding:0 7px;font-size:15px;font-weight:650}
+.bundle-toggle{display:flex;gap:12px;align-items:flex-start;cursor:pointer;min-height:44px}
+.bundle-toggle input{margin-top:5px;accent-color:#c93d20;width:19px;height:19px;flex-shrink:0}
+.bundle-toggle strong,.bundle-toggle small{display:block}.bundle-toggle small{font-size:12px;color:#52636b;line-height:1.6;margin-top:5px}
+.bundle-options{display:grid;gap:7px;margin-top:15px}.bundle-options label{font-size:12px;font-weight:600}.bundle-options select{width:100%;min-width:0;min-height:44px;background:#fff;border:1px solid #bdcbd1;border-radius:5px;padding:9px;font-size:13px}
+.cart-availability,.shop-availability-note{padding-top:15px;padding-bottom:15px;color:#824321;background:#fff0d9;line-height:1.7;font-size:13px;border-radius:6px}
+.cart-line-unavailable{font-size:12px;color:#a9321b;margin-top:8px}.is-unavailable .add-product{color:#52636b;border-color:#bdcbd1;background:#e9eef0;cursor:not-allowed}
+.checkout-delivery-check{min-height:44px;border:1px solid #b8c8cf;background:#edf2f3;border-radius:5px;padding:10px 12px;margin-top:9px;font-weight:600;font-size:12px;color:#192d39}
+.order-timeline{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:10px;padding:15px 0;margin:15px 0;border-bottom:1px solid #d3dde0}
+.order-timeline li{font-size:11px;color:#627980;border-top:3px solid #d2dce0;padding-top:9px;line-height:1.6}.order-timeline .is-done{border-color:#3d7655;color:#365f46}.order-timeline .is-current{border-color:#c93d20;color:#a6321b;font-weight:700}
+.order-community-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}.order-community-actions button{min-height:44px;border:1px solid #bdcbd1;border-radius:5px;padding:9px 12px;background:#fff;color:#192d39;font-size:12px}
+@media(max-width:760px){.product-bundle{padding:14px}.order-timeline{grid-template-columns:1fr 1fr}.order-community-actions button{flex:1}.shop-availability-note{margin:0 17px}.bundle-toggle small{font-size:11px}}

@@ -1,0 +1,20 @@
+# Generated presentation and local private data
+/public/
+__pycache__/
+*.py[cod]
+*.sqlite*
+*-wal
+*-shm
+admin-key.txt
+.env
+.env.*
+state/
+.brasa-burger-state/
+.brasa-data/
+private/
+brasa-burger-private/
+assets/uploads/
+*.log
+*.zip
+.DS_Store
+Thumbs.db
